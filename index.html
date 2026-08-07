@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Desi Wulansari — Network & System Administration.">
+  <title>Desi Wulansari | Network & System Administration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="grid-bg"></div>
+  <div class="cursor-orb"></div>
+
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">&lt;DESI<span>/&gt;</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+    <nav id="navMenu">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Let's Connect ↗</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> TKJ / NETWORK & SYSTEM</p>
+        <h1>Building <em>systems</em><br>that stay connected.</h1>
+        <p class="hero-text">Saya Desi Wulansari, fresh graduate Teknik Komputer dan Jaringan yang tertarik pada networking, Linux server, infrastructure, dan cyber security.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">Explore My Work <b>↗</b></a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-terminal reveal">
+        <div class="terminal">
+          <div class="terminal-bar"><span></span><span></span><span></span><code>desi@portfolio:~</code></div>
+          <div class="terminal-body">
+            <p><i>$</i> whoami</p>
+            <strong>desi_wulansari</strong>
+            <p><i>$</i> focus --show</p>
+            <div class="terminal-tags"><span>NETWORKING</span><span>LINUX</span><span>SERVER</span><span>SECURITY</span></div>
+            <p><i>$</i> status</p>
+            <strong class="online">● AVAILABLE FOR OPPORTUNITIES</strong>
+          </div>
+        </div>
+        <div class="hero-orbit"><span>NET</span><span>SYS</span><span>SEC</span></div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-head reveal"><p class="eyebrow"><span></span> 01 / ABOUT</p><h2>Behind the <em>network.</em></h2></div>
+      <div class="about-layout">
+        <div class="portrait-card reveal">
+          <div class="portrait-placeholder">
+            <div class="portrait-frame">YOUR<br>PHOTO</div>
+            <p>assets/images/profile.jpg</p>
+          </div>
+          <div class="portrait-meta"><span>DESI WULANSARI</span><small>TKJ • 2026</small></div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="lead">Saya terus mengembangkan kemampuan melalui praktik lab, deployment server, virtualization, networking, dan security.</p>
+          <p>Background saya berasal dari Teknik Komputer dan Jaringan. Saya menikmati proses membangun, mengonfigurasi, troubleshooting, dan mendokumentasikan infrastructure secara sistematis.</p>
+          <p>Target saya adalah membangun karier di bidang <strong>Network Engineering, System Administration, Infrastructure, dan Cyber Security.</strong></p>
+          <div class="mini-grid">
+            <div><b>01</b><span>Network<br>Infrastructure</span></div>
+            <div><b>02</b><span>Linux &<br>Server</span></div>
+            <div><b>03</b><span>Virtualization<br>& DevOps</span></div>
+            <div><b>04</b><span>Security<br>Mindset</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="section-head reveal"><p class="eyebrow"><span></span> 02 / EDUCATION</p><h2>Where I built my <em>foundation.</em></h2></div>
+      <article class="education-card clickable reveal" data-modal="educationModal">
+        <div class="edu-image"><div class="image-placeholder">SCHOOL<br>PHOTO</div><span>CLICK TO EXPLORE ↗</span></div>
+        <div class="edu-info">
+          <p class="mono">2023 — 2026</p>
+          <h3>SMK Negeri 1 Subang</h3>
+          <h4>Teknik Komputer dan Jaringan (TKJ)</h4>
+          <p>Membangun fondasi di bidang jaringan komputer, server, Linux, MikroTik, virtualization, dan troubleshooting infrastructure.</p>
+          <div class="edu-bottom"><span>Fresh Graduate</span><b>View Details →</b></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-head reveal"><p class="eyebrow"><span></span> 03 / SKILLS</p><h2>Tools I like to <em>build with.</em></h2></div>
+      <div class="skill-grid">
+        <article class="skill-card reveal"><span class="skill-num">01</span><div class="skill-icon">⌁</div><h3>Networking</h3><p>Network configuration & infrastructure.</p><div class="chips"><span>MikroTik</span><span>TCP/IP</span><span>VLAN</span><span>NAT</span><span>DHCP</span><span>DNS</span><span>Firewall</span></div></article>
+        <article class="skill-card reveal"><span class="skill-num">02</span><div class="skill-icon">$_</div><h3>Linux & Server</h3><p>Server deployment and administration.</p><div class="chips"><span>Debian</span><span>Ubuntu</span><span>Nginx</span><span>Apache</span><span>Bind9</span><span>SSH</span><span>SSL/TLS</span></div></article>
+        <article class="skill-card reveal"><span class="skill-num">03</span><div class="skill-icon">▣</div><h3>Infrastructure</h3><p>Virtualization and infrastructure tooling.</p><div class="chips"><span>Proxmox</span><span>Docker</span><span>Tailscale</span><span>WireGuard</span><span>OpenVPN</span></div></article>
+        <article class="skill-card reveal"><span class="skill-num">04</span><div class="skill-icon">↯</div><h3>Security & DevOps</h3><p>Automation, hardening, and security basics.</p><div class="chips"><span>Ansible</span><span>Git</span><span>Hardening</span><span>Firewall</span><span>SOC Basics</span></div></article>
+      </div>
+    </section>
+
+    <section class="section certificates" id="certificates">
+      <div class="section-head reveal"><p class="eyebrow"><span></span> 04 / CREDENTIALS</p><h2>Certificates & <em>achievements.</em></h2></div>
+      <div class="uniform-grid">
+        <article class="credential-card clickable reveal" data-title="Sertifikat Penghargaan Nilai Tertinggi TKJ" data-category="Achievement" data-year="2026" data-image="assets/certificates/tkj-award.jpg" data-description="Penghargaan atas pencapaian akademik terbaik pada kompetensi Teknik Komputer dan Jaringan.">
+          <div class="credential-image"><span>ADD CERTIFICATE<br>IMAGE</span></div><div class="card-body"><small>ACHIEVEMENT • 2026</small><h3>Nilai Tertinggi TKJ</h3><p>SMK Negeri 1 Subang</p><b>View Details ↗</b></div>
+        </article>
+        <article class="credential-card clickable reveal" data-title="Sertifikat PKL BPJS Kesehatan" data-category="Experience" data-year="2025" data-image="assets/certificates/pkl-bpjs.jpg" data-description="Sertifikat pengalaman Praktik Kerja Lapangan di BPJS Kesehatan Cabang Subang.">
+          <div class="credential-image"><span>ADD CERTIFICATE<br>IMAGE</span></div><div class="card-body"><small>EXPERIENCE • 2025</small><h3>PKL BPJS Kesehatan</h3><p>BPJS Kesehatan Subang</p><b>View Details ↗</b></div>
+        </article>
+        <article class="credential-card clickable reveal" data-title="Sertifikat PT Jerbee Indonesia" data-category="Certificate" data-year="2026" data-image="assets/certificates/jerbee.jpg" data-description="Sertifikat kegiatan/pelatihan dari PT Jerbee Indonesia.">
+          <div class="credential-image"><span>ADD CERTIFICATE<br>IMAGE</span></div><div class="card-body"><small>CERTIFICATE • 2026</small><h3>PT Jerbee Indonesia</h3><p>Certificate</p><b>View Details ↗</b></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-head reveal"><p class="eyebrow"><span></span> 05 / PROJECTS</p><h2>Labs, systems & <em>experiments.</em></h2></div>
+      <div class="project-tabs" role="tablist"><button class="active" data-filter="all">ALL</button><button data-filter="networking">NETWORKING</button><button data-filter="linux">LINUX</button><button data-filter="server">SERVER</button><button data-filter="virtualization">VIRTUALIZATION</button><button data-filter="security">SECURITY</button></div>
+      <div class="project-grid">
+        <article class="project-card clickable reveal" data-category="linux server" data-title="Debian Web Server" data-description="Deployment web server berbasis Debian dengan Nginx/Apache, SSL, dan konfigurasi layanan." data-tech="Debian • Nginx • Apache2 • SSL/TLS"><div class="project-number">01</div><div class="project-visual server-visual"><span>LINUX</span><b>$_</b></div><small>LINUX / SERVER</small><h3>Debian Web Server</h3><p>Deployment dan konfigurasi web server.</p><b class="project-link">View Details →</b></article>
+        <article class="project-card clickable reveal" data-category="networking" data-title="MikroTik Network Lab" data-description="Lab konfigurasi gateway, DHCP, NAT, firewall, hotspot, dan bandwidth management menggunakan MikroTik." data-tech="MikroTik • RouterOS • DHCP • NAT • Firewall"><div class="project-number">02</div><div class="project-visual network-visual"><span>NETWORK</span><b>⌁</b></div><small>NETWORKING</small><h3>MikroTik Network Lab</h3><p>Routing, NAT, firewall & bandwidth.</p><b class="project-link">View Details →</b></article>
+        <article class="project-card clickable reveal" data-category="virtualization server" data-title="Proxmox Infrastructure Lab" data-description="Lab virtualisasi server menggunakan Proxmox untuk menjalankan beberapa environment dan layanan." data-tech="Proxmox • VM • Debian • Tailscale"><div class="project-number">03</div><div class="project-visual prox-visual"><span>PROXMOX</span><b>▣</b></div><small>VIRTUALIZATION / SERVER</small><h3>Proxmox Infrastructure</h3><p>Virtual machine & server lab.</p><b class="project-link">View Details →</b></article>
+        <article class="project-card clickable reveal" data-category="security" data-title="Server Hardening Lab" data-description="Eksperimen hardening Linux server meliputi SSH security, firewall, service exposure, dan basic security practices." data-tech="Linux • SSH • UFW • Hardening"><div class="project-number">04</div><div class="project-visual security-visual"><span>SECURITY</span><b>↯</b></div><small>SECURITY</small><h3>Server Hardening Lab</h3><p>Basic security & Linux hardening.</p><b class="project-link">View Details →</b></article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-head reveal"><p class="eyebrow"><span></span> 06 / EXPERIENCE</p><h2>Learning through <em>real work.</em></h2></div>
+      <article class="experience-card clickable reveal" data-modal="experienceModal">
+        <div class="exp-image"><div class="image-placeholder">ADD<br>EXPERIENCE<br>PHOTO</div></div>
+        <div class="exp-content"><div class="exp-top"><span>2025 • 6 MONTHS</span><b>PKL</b></div><h3>BPJS Kesehatan Cabang Subang</h3><h4>Administrative & Mobile JKN Service</h4><p>Pengalaman praktik kerja lapangan dalam administrasi dan pelayanan peserta, menggunakan Google Sheets dan Microsoft Excel serta membantu layanan Mobile JKN.</p><div class="exp-tags"><span>Administration</span><span>Google Sheets</span><span>Excel</span><span>Mobile JKN</span></div><strong>Click for full experience →</strong></div>
+      </article>
+    </section>
+
+    <section class="section cv-section" id="cv">
+      <div class="cv-card reveal"><div><p class="eyebrow"><span></span> MY RESUME</p><h2>Let's build something<br><em>reliable.</em></h2><p>Explore my skills, experience, education, and projects through my CV.</p></div><div class="cv-actions"><a class="btn primary" href="Desi-Wulansari-CV.pdf" download>Download CV ↓</a><a class="btn secondary" href="Desi-Wulansari-CV.pdf" target="_blank">View CV ↗</a></div></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-head reveal"><p class="eyebrow"><span></span> 07 / CONTACT</p><h2>Open a <em>connection.</em></h2></div>
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="mailto:your-email@example.com"><small>EMAIL</small><h3>Let's talk</h3><span>your-email@example.com ↗</span></a>
+        <a class="contact-card reveal" href="https://github.com/" target="_blank" rel="noreferrer"><small>GITHUB</small><h3>Code & projects</h3><span>github.com/yourusername ↗</span></a>
+        <a class="contact-card reveal" href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><small>LINKEDIN</small><h3>Professional</h3><span>Connect with me ↗</span></a>
+        <a class="contact-card reveal" href="https://instagram.com/" target="_blank" rel="noreferrer"><small>INSTAGRAM</small><h3>Behind the scenes</h3><span>@yourusername ↗</span></a>
+        <a class="contact-card reveal" href="https://www.tiktok.com/" target="_blank" rel="noreferrer"><small>TIKTOK</small><h3>Short content</h3><span>@yourusername ↗</span></a>
+        <a class="contact-card reveal" href="https://www.youtube.com/" target="_blank" rel="noreferrer"><small>YOUTUBE</small><h3>Learning & tutorials</h3><span>Visit channel ↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>&lt;DESI/&gt;</span><p>© 2026 Desi Wulansari. Built with curiosity & code.</p><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <div class="modal" id="educationModal"><div class="modal-box"><button class="modal-close">×</button><div class="modal-layout"><div class="modal-image">SCHOOL<br>PHOTO</div><div><small>EDUCATION • 2023—2026</small><h2>SMK Negeri 1 Subang</h2><h3>Teknik Komputer dan Jaringan</h3><p>Fondasi pendidikan di bidang jaringan komputer, Linux, server, MikroTik, virtualization, dan troubleshooting.</p><ul><li>Fresh Graduate 2026</li><li>Fokus TKJ / Network Infrastructure</li><li>Pengembangan skill melalui lab project</li></ul></div></div></div></div>
+
+  <div class="modal" id="experienceModal"><div class="modal-box"><button class="modal-close">×</button><div class="modal-layout"><div class="modal-image">EXPERIENCE<br>PHOTO</div><div><small>EXPERIENCE • 2025</small><h2>BPJS Kesehatan Cabang Subang</h2><h3>PKL — Administrative & Mobile JKN Service</h3><p>Melaksanakan PKL selama enam bulan dengan pengalaman pada administrasi, pelayanan peserta, Mobile JKN, Google Sheets, dan Microsoft Excel.</p><ul><li>Administrasi dan pengolahan data</li><li>Pelayanan peserta / Mobile JKN</li><li>Google Sheets & Microsoft Excel</li></ul></div></div></div></div>
+
+  <div class="modal" id="detailModal"><div class="modal-box"><button class="modal-close">×</button><div class="detail-modal"><small id="detailCategory"></small><h2 id="detailTitle"></h2><p id="detailDescription"></p><div id="detailTech" class="chips"></div><div class="detail-image" id="detailImage"></div></div></div></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
