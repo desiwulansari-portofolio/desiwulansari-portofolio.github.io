@@ -1,0 +1,58 @@
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity .75s cubic-bezier(.2,.8,.2,1),
+    transform .75s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay {
+  transition-delay: .12s;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.floating-card-top {
+  animation: float 4s ease-in-out infinite;
+}
+
+.floating-card-bottom {
+  animation: float 4.5s ease-in-out infinite reverse;
+}
+
+.profile-card {
+  animation: profileFloat 7s ease-in-out infinite;
+}
+
+@keyframes profileFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(.4deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-card-top,
+  .floating-card-bottom,
+  .profile-card {
+    animation: none;
+  }
+}

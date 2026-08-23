@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Desi Wulansari — Management student with a technical background in networking, Linux and server administration.">
+  <meta name="theme-color" content="#8b5cf6">
+  <title>Desi Wulansari — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/animations.css">
+</head>
+
+<body>
+  <div class="page-loader" aria-hidden="true">
+    <div class="loader-orbit"></div>
+    <span>Loading portfolio...</span>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <span id="scrollProgress"></span>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="Desi Wulansari Home">
+        <span class="brand-mark">D</span>
+        <span>Desi<span>.</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact" class="nav-cta">Let's Talk <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========================= HERO ========================= -->
+    <section class="hero section" id="home">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            Available for opportunities
+          </div>
+
+          <p class="hero-kicker">Hello, I'm</p>
+          <h1>Desi <span>Wulansari</span></h1>
+
+          <div class="hero-role">
+            <span id="roleText">Management Student</span>
+          </div>
+
+          <p class="hero-description">
+            Mahasiswi S1 Manajemen dengan latar belakang Teknik Komputer dan Jaringan.
+            Menggabungkan kemampuan teknis, administrasi, pengelolaan data, dan problem solving
+            untuk menciptakan solusi yang terstruktur dan efektif.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              Explore My Work <span>↗</span>
+            </a>
+            <a class="btn btn-secondary" href="./assets/cv/CV-Desi-Wulansari.pdf" download>
+              Download CV <span>↓</span>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <div>
+              <strong>01</strong>
+              <span>Management</span>
+            </div>
+            <div>
+              <strong>02</strong>
+              <span>Technology</span>
+            </div>
+            <div>
+              <strong>03</strong>
+              <span>Organization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+
+          <div class="profile-card image-frame">
+            <div class="profile-decoration"></div>
+            <img
+              data-image
+              src="./assets/images/profile/profile-main.jpg"
+              alt="Desi Wulansari"
+              data-fallback="./assets/images/profile/profile-placeholder.svg"
+            >
+            <div class="profile-label">
+              <span>Desi Wulansari</span>
+              <small>Management × Technology</small>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-top">
+            <span class="floating-icon">✦</span>
+            <div>
+              <strong>Fresh Graduate</strong>
+              <small>SMKN 1 Subang · TKJ</small>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-bottom">
+            <span class="floating-icon">⌁</span>
+            <div>
+              <strong>Tech Background</strong>
+              <small>Network · Linux · Server</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="Scroll ke About">
+        <span>Scroll to explore</span>
+        <i>↓</i>
+      </a>
+    </section>
+
+    <!-- ========================= ABOUT ========================= -->
+    <section class="section section-soft" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">01 — ABOUT ME</p>
+          <h2>Technology taught me to solve problems.<br><span>Management taught me to see the bigger picture.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-wrap reveal">
+            <div class="image-frame about-image">
+              <img
+                data-image
+                src="./assets/images/profile/profile-about.jpg"
+                alt="Desi Wulansari"
+                data-fallback="./assets/images/profile/profile-main.jpg"
+              >
+            </div>
+            <div class="image-caption">
+              <span>DESI WULANSARI</span>
+              <span>2026</span>
+            </div>
+          </div>
+
+          <div class="about-copy reveal reveal-delay">
+            <p class="lead">
+              Saya memiliki latar belakang <strong>Teknik Komputer dan Jaringan (TKJ)</strong>
+              yang membentuk cara saya berpikir secara logis, teliti, dan sistematis.
+            </p>
+            <p>
+              Selama sekolah, saya terbiasa mengerjakan konfigurasi jaringan, server Linux,
+              virtualisasi, administrasi data, serta troubleshooting. Saya juga mendapatkan
+              pengalaman PKL di BPJS Kesehatan Cabang Subang yang memperkuat kemampuan
+              administrasi, pelayanan, dan pengelolaan data.
+            </p>
+            <p>
+              Saat ini saya melanjutkan studi di bidang <strong>Manajemen</strong> karena ingin
+              mengembangkan kemampuan yang lebih luas—bukan hanya memahami bagaimana sebuah
+              teknologi bekerja, tetapi juga bagaimana proses, data, manusia, dan strategi
+              dapat dikelola secara efektif.
+            </p>
+
+            <div class="about-facts">
+              <div><strong>Background</strong><span>Teknik Komputer & Jaringan</span></div>
+              <div><strong>Current Study</strong><span>S1 Manajemen</span></div>
+              <div><strong>Experience</strong><span>PKL · Administration · IT</span></div>
+              <div><strong>Interest</strong><span>Technology · Business · Data</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= SKILLS ========================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div>
+            <p class="section-label">02 — SKILLS</p>
+            <h2>A practical mix of <span>technical & business skills.</span></h2>
+          </div>
+          <p>
+            Keahlian yang saya kembangkan dari pendidikan, project, organisasi,
+            pengalaman PKL, dan pembelajaran mandiri.
+          </p>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-feature reveal">
+            <div class="skill-number">01</div>
+            <h3>Technical<br><span>Foundation</span></h3>
+            <p>Fondasi teknologi yang saya gunakan untuk memahami infrastructure, systems, dan troubleshooting.</p>
+            <div class="skill-tags">
+              <span>Networking</span><span>Linux</span><span>Server</span><span>Virtualization</span>
+            </div>
+          </div>
+
+          <div class="skills-list">
+            <article class="skill-card reveal">
+              <span class="skill-icon">⌘</span>
+              <div>
+                <h3>Networking</h3>
+                <p>MikroTik · TCP/IP · VLAN · NAT · DHCP · Firewall · Subnetting</p>
+              </div>
+              <span class="skill-arrow">↗</span>
+            </article>
+
+            <article class="skill-card reveal reveal-delay">
+              <span class="skill-icon">◈</span>
+              <div>
+                <h3>Linux & Server</h3>
+                <p>Debian · Ubuntu CLI · Nginx · Apache2 · Bind9 · IIS · SSL</p>
+              </div>
+              <span class="skill-arrow">↗</span>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="skill-icon">▦</span>
+              <div>
+                <h3>Infrastructure</h3>
+                <p>Proxmox · Docker · WireGuard · Tailscale · Reverse Proxy</p>
+              </div>
+              <span class="skill-arrow">↗</span>
+            </article>
+
+            <article class="skill-card reveal reveal-delay">
+              <span class="skill-icon">◎</span>
+              <div>
+                <h3>Administration</h3>
+                <p>Microsoft Excel · Google Sheets · Data Entry · Documentation · Service</p>
+              </div>
+              <span class="skill-arrow">↗</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= EDUCATION ========================= -->
+    <section class="section section-soft" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">03 — EDUCATION</p>
+          <h2>Where my <span>foundation</span> was built.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2026 — Present</div>
+            <div class="timeline-content">
+              <div class="education-card">
+                <div class="image-frame education-image">
+                  <img data-image src="./assets/images/education/university.jpg"
+                       alt="Universitas"
+                       data-fallback="./assets/images/education/education-placeholder.svg">
+                </div>
+                <div class="education-copy">
+                  <span class="card-label">UNDERGRADUATE</span>
+                  <h3>S1 Manajemen</h3>
+                  <p>Program studi yang saya pilih untuk memperluas perspektif di bidang bisnis, organisasi, dan pengelolaan sumber daya.</p>
+                  <span class="education-status">Currently studying</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal reveal-delay">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2023 — 2026</div>
+            <div class="timeline-content">
+              <div class="education-card">
+                <div class="image-frame education-image">
+                  <img data-image src="./assets/images/education/smkn-1-subang.jpg"
+                       alt="SMKN 1 Subang"
+                       data-fallback="./assets/images/education/education-placeholder.svg">
+                </div>
+                <div class="education-copy">
+                  <span class="card-label">VOCATIONAL HIGH SCHOOL</span>
+                  <h3>SMKN 1 Subang</h3>
+                  <p>Teknik Komputer dan Jaringan (TKJ), dengan fokus pada networking, Linux server, infrastructure, dan troubleshooting.</p>
+                  <span class="education-status">Lulusan Terbaik TKJ · 2025/2026</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= EXPERIENCE ========================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">04 — EXPERIENCE</p>
+          <h2>Learning through <span>real-world experience.</span></h2>
+        </div>
+
+        <article class="experience-card reveal">
+          <div class="experience-brand">
+            <div class="image-frame logo-frame">
+              <img data-image src="./assets/images/logos/bpjs-kesehatan.svg"
+                   alt="BPJS Kesehatan"
+                   data-fallback="./assets/images/experience/experience-placeholder.svg">
+            </div>
+          </div>
+
+          <div class="experience-main">
+            <div class="experience-top">
+              <div>
+                <span class="card-label">PRAKTIK KERJA LAPANGAN</span>
+                <h3>BPJS Kesehatan Cabang Subang</h3>
+              </div>
+              <span class="experience-date">2025 · 6 Months</span>
+            </div>
+
+            <p class="experience-summary">
+              Mendukung aktivitas administrasi dan pelayanan peserta, termasuk pengelolaan
+              data serta pendampingan layanan Mobile JKN.
+            </p>
+
+            <div class="experience-points">
+              <div><span>01</span><p>Administrasi dan pengelolaan data menggunakan Excel dan Google Sheets.</p></div>
+              <div><span>02</span><p>Mendampingi pelayanan peserta dan membantu proses penggunaan Mobile JKN.</p></div>
+              <div><span>03</span><p>Terbiasa bekerja dengan ketelitian, komunikasi, dokumentasi, dan prosedur kerja.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="org-strip reveal">
+          <div>
+            <span class="card-label">ORGANIZATION</span>
+            <h3>Leadership & responsibility</h3>
+          </div>
+          <div class="org-items">
+            <span>Wakil Ketua Jurusan TKJ · 2025/2026</span>
+            <span>Bendahara IT Club · 2023/2024</span>
+            <span>Bendahara Kelas · 2023/2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= PROJECTS ========================= -->
+    <section class="section section-soft" id="projects">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div>
+            <p class="section-label">05 — PROJECTS</p>
+            <h2>Things I've <span>built & explored.</span></h2>
+          </div>
+          <p>
+            Project digunakan sebagai ruang untuk menguji konsep networking,
+            server, virtualization, dan web development.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-large reveal">
+            <button class="project-media image-frame project-image"
+                    data-project="0" aria-label="Buka detail project Proxmox">
+              <img data-image src="./assets/images/projects/project-01.jpg"
+                   alt="Proxmox Server"
+                   data-fallback="./assets/images/projects/project-placeholder.svg">
+              <span class="project-overlay"><b>View project</b> ↗</span>
+            </button>
+            <div class="project-info">
+              <div>
+                <span class="card-label">INFRASTRUCTURE · 2025</span>
+                <h3>Proxmox Server with Tailscale</h3>
+              </div>
+              <p>Virtualization environment dengan remote access menggunakan Tailscale.</p>
+              <div class="project-tags"><span>Proxmox</span><span>Linux</span><span>Tailscale</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay">
+            <button class="project-media image-frame project-image"
+                    data-project="1" aria-label="Buka detail project Web Server">
+              <img data-image src="./assets/images/projects/project-02.jpg"
+                   alt="Web Server"
+                   data-fallback="./assets/images/projects/project-placeholder.svg">
+              <span class="project-overlay"><b>View project</b> ↗</span>
+            </button>
+            <div class="project-info">
+              <span class="card-label">SERVER · 2025</span>
+              <h3>Linux Web Server</h3>
+              <p>Eksplorasi Debian, Nginx, Apache2, SSL, DNS, dan reverse proxy.</p>
+              <div class="project-tags"><span>Debian</span><span>Nginx</span><span>Apache2</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <button class="project-media image-frame project-image"
+                    data-project="2" aria-label="Buka detail project Automatic Trash Can">
+              <img data-image src="./assets/images/projects/project-03.jpg"
+                   alt="Automatic Trash Can"
+                   data-fallback="./assets/images/projects/project-placeholder.svg">
+              <span class="project-overlay"><b>View project</b> ↗</span>
+            </button>
+            <div class="project-info">
+              <span class="card-label">HARDWARE · 2025</span>
+              <h3>Automatic Trash Can</h3>
+              <p>Project perangkat otomatis dengan fokus pada sensor, logic, dan implementasi.</p>
+              <div class="project-tags"><span>IoT</span><span>Automation</span><span>Hardware</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= ACHIEVEMENTS ========================= -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">06 — ACHIEVEMENTS</p>
+          <h2>Milestones that <span>matter.</span></h2>
+        </div>
+
+        <div class="achievement-grid">
+          <article class="achievement-card reveal">
+            <div class="image-frame achievement-image">
+              <img data-image src="./assets/images/achievements/achievement-01.jpg"
+                   alt="Achievement"
+                   data-fallback="./assets/images/achievements/achievement-placeholder.svg">
+            </div>
+            <div class="achievement-copy">
+              <span>2026</span>
+              <h3>Lulusan Terbaik TKJ</h3>
+              <p>Penghargaan atas pencapaian akademik terbaik pada kompetensi keahlian Teknik Komputer dan Jaringan.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card reveal reveal-delay">
+            <div class="image-frame achievement-image">
+              <img data-image src="./assets/images/achievements/achievement-02.jpg"
+                   alt="Achievement"
+                   data-fallback="./assets/images/achievements/achievement-placeholder.svg">
+            </div>
+            <div class="achievement-copy">
+              <span>2024</span>
+              <h3>National Smart Student Olympiad</h3>
+              <p>Medali emas Bahasa Indonesia serta pengalaman mengikuti kompetisi akademik lainnya.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card achievement-text-only reveal">
+            <div class="achievement-number">+</div>
+            <div>
+              <span>ADDITIONAL</span>
+              <h3>Academic & Competition Experience</h3>
+              <p>Pengalaman kompetisi Matematika tingkat kabupaten serta perolehan medali pada bidang Informatika dan Biologi.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CERTIFICATES ========================= -->
+    <section class="section section-soft" id="certificates">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div>
+            <p class="section-label">07 — CERTIFICATES</p>
+            <h2>Proof of <span>continuous learning.</span></h2>
+          </div>
+          <p>Klik certificate untuk melihat gambar dalam ukuran penuh.</p>
+        </div>
+
+        <div class="certificate-grid" id="certificateGrid"></div>
+      </div>
+    </section>
+
+    <!-- ========================= CONTACT ========================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-orb"></div>
+          <div class="contact-copy">
+            <p class="section-label">08 — CONTACT</p>
+            <h2>Let's create something<br><span>meaningful.</span></h2>
+            <p>
+              Terbuka untuk kesempatan kerja, project, kolaborasi, maupun networking
+              yang dapat menjadi ruang untuk terus berkembang.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="contact-link" href="mailto:desiwulansari@example.com">
+              <span>Email</span><b>↗</b>
+            </a>
+            <a class="contact-link" href="https://github.com/" target="_blank" rel="noreferrer">
+              <span>GitHub</span><b>↗</b>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+              <span>LinkedIn</span><b>↗</b>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Desi Wulansari</span>
+      <span>Built with curiosity & consistency.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ========================= IMAGE MODAL ========================= -->
+  <div class="modal" id="imageModal" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-modal-close aria-label="Tutup">×</button>
+      <div class="modal-media image-frame">
+        <img id="modalImage" src="" alt="">
+      </div>
+      <div class="modal-caption">
+        <div>
+          <span class="card-label">PROJECT GALLERY</span>
+          <h3 id="modalTitle">Project</h3>
+        </div>
+        <div class="modal-controls">
+          <button id="modalPrev" aria-label="Sebelumnya">←</button>
+          <span id="modalCounter">1 / 1</span>
+          <button id="modalNext" aria-label="Berikutnya">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
