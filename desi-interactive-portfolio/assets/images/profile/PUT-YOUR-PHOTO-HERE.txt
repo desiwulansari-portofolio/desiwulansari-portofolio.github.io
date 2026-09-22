@@ -1,1 +1,0 @@
-Replace this file with your portrait photo named profile.jpg. The layout preserves the photo's native aspect ratio.
