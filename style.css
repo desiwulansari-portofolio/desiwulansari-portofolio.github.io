@@ -703,6 +703,7 @@ h1, h2, h3 {
 .social-chip[data-color="#0077B5"]:hover { background-color: #E6F3FF; color: #0077B5; }
 .social-chip[data-color="#2b3137"]:hover { background-color: #F0F0F0; color: #2b3137; }
 .social-chip[data-color="#E1306C"]:hover { background-color: #FFE6EE; color: #E1306C; }
+.social-chip[data-color="#000000"]:hover { background-color: #211D25; color: var(--lime); }
 
 /* RESPONSIVE & MOBILE MENU */
 @media (max-width: 900px) {
