@@ -144,54 +144,6 @@ tailwind.config = {
             mascot.style.left = offsetLeft + 'px';
         }
 
-        // 5. Spotify Music Player Logic
-        const songs = [
-            { title: "Acoustic Serenity", artist: "Instrumental Focus", duration: "03:45" },
-            { title: "Midnight Study Beats", artist: "Lo-Fi Collective", duration: "02:50" },
-            { title: "Clarity & Mindset", artist: "Chill Vibes", duration: "04:10" }
-        ];
-        let currentSongIdx = 0;
-        let isPlaying = false;
-
-        const songTitle = document.getElementById('current-song-title');
-        const songArtist = document.getElementById('current-song-artist');
-        const playBtn = document.getElementById('play-btn');
-        const playIcon = document.getElementById('play-icon');
-        const equalizer = document.getElementById('equalizer');
-
-        function playSong(idx) {
-            currentSongIdx = idx;
-            songTitle.textContent = songs[idx].title;
-            songArtist.textContent = songs[idx].artist;
-            isPlaying = true;
-            updatePlayerUI();
-        }
-
-        function updatePlayerUI() {
-            if (isPlaying) {
-                playIcon.className = "fas fa-pause text-sm ml-0";
-                equalizer.classList.remove('paused');
-            } else {
-                playIcon.className = "fas fa-play text-sm ml-0.5";
-                equalizer.classList.add('paused');
-            }
-        }
-
-        playBtn.addEventListener('click', () => {
-            isPlaying = !isPlaying;
-            updatePlayerUI();
-        });
-
-        document.getElementById('prev-btn').addEventListener('click', () => {
-            currentSongIdx = (currentSongIdx - 1 + songs.length) % songs.length;
-            playSong(currentSongIdx);
-        });
-
-        document.getElementById('next-btn').addEventListener('click', () => {
-            currentSongIdx = (currentSongIdx + 1) % songs.length;
-            playSong(currentSongIdx);
-        });
-
         // 6. Portfolio Tabs Switching
         function switchPortoTab(tabKey) {
             document.querySelectorAll('.porto-tab').forEach(tab => {
