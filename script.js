@@ -308,7 +308,7 @@ tailwind.config = {
             }, 1000);
         });
 
-            // =========================================================
+          // =========================================================
 // DATA SERTIFIKAT & ACHIEVEMENTS (Mudah Diedit & Ditambah)
 // =========================================================
 const certificatesData = [
@@ -398,7 +398,6 @@ function renderCertificates(category = 'All') {
 
     grid.innerHTML = filteredData.map((cert) => {
         const iconClasses = categoryIconMap[cert.type] || 'fas fa-award text-sky-400 bg-blue-950/80 border-blue-800/60';
-        const fallbackImg = `https://placehold.co/800x600/0a0f26/38bdf8?text=${encodeURIComponent(cert.title)}`;
 
         return `
             <div onclick="openCertificateModal('${cert.id}')" 
@@ -507,26 +506,35 @@ function closeCertificateModal() {
     }
 }
 
-// Integrasi Zoom Fullscreen Lightbox
+// Integrasi Zoom Fullscreen Lightbox dari Modal Sertifikat
 function openCertLightboxFromModal() {
     if (!selectedCertData) return;
 
     const lightbox = document.getElementById('fullScreenLightbox');
     if (lightbox) {
-        document.getElementById('lightboxTitle').textContent = selectedCertData.title + ' - Original Certificate';
-        const lightboxImg = document.getElementById('lightboxImage');
-        lightboxImg.src = selectedCertData.image;
-        lightboxImg.onerror = function() {
-            this.src = `https://placehold.co/1000x700/0a0f26/38bdf8?text=${encodeURIComponent(selectedCertData.title)}`;
-        };
+        const titleEl = document.getElementById('lightboxTitle');
+        if (titleEl) {
+            titleEl.textContent = selectedCertData.title + ' - Full Certificate';
+        }
 
+        const lightboxImg = document.getElementById('lightboxImage');
+        if (lightboxImg) {
+            lightboxImg.src = selectedCertData.image;
+            lightboxImg.onerror = function() {
+                this.src = `https://placehold.co/1000x700/0a0f26/38bdf8?text=${encodeURIComponent(selectedCertData.title)}`;
+            };
+        }
+
+        // Tampilkan lightbox dengan z-index tertinggi (100)
+        lightbox.style.zIndex = '100';
         lightbox.classList.remove('hidden');
         lightbox.classList.add('flex');
+
         if (typeof resetZoom === 'function') resetZoom();
     }
 }
 
-// Global Event Listeners untuk Modal Sertifikat
+// Global Event Listeners untuk Modal Sertifikat & ESC Key
 document.addEventListener('click', function(e) {
     const certModal = document.getElementById('certificate-modal');
     if (e.target === certModal) {
@@ -536,6 +544,15 @@ document.addEventListener('click', function(e) {
 
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
+        // Jika lightbox sedang terbuka, tutup lightbox terlebih dahulu tanpa menutup modal detail
+        const lightbox = document.getElementById('fullScreenLightbox');
+        if (lightbox && !lightbox.classList.contains('hidden')) {
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            return;
+        }
+
+        // Jika modal sertifikat sedang terbuka, tutup modal sertifikat
         const certModal = document.getElementById('certificate-modal');
         if (certModal && !certModal.classList.contains('opacity-0')) {
             closeCertificateModal();
@@ -547,4 +564,3 @@ document.addEventListener('keydown', function(e) {
 document.addEventListener('DOMContentLoaded', () => {
     renderCertificates('All');
 });
-
