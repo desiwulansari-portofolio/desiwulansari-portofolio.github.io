@@ -307,3 +307,244 @@ tailwind.config = {
                 newComment.classList.remove('animate-pulse');
             }, 1000);
         });
+
+            // =========================================================
+// DATA SERTIFIKAT & ACHIEVEMENTS (Mudah Diedit & Ditambah)
+// =========================================================
+const certificatesData = [
+    {
+        id: "cert-1",
+        title: "National Smart Student Olympiad",
+        type: "Achievements",
+        year: "2024",
+        subtitle: "Gold Medal · National Level",
+        image: "assets/certificates/national-smart-student-olympiad.jpg",
+        description: "Awarded a Gold Medal in the National Smart Student Olympiad competition, demonstrating high academic achievement, problem-solving skills, and analytical thinking.",
+        tags: ["Achievement", "Competition", "Olympiad", "Bahasa Indonesia"]
+    },
+    {
+        id: "cert-2",
+        title: "Computer & Network Engineering Competency",
+        type: "Certifications",
+        year: "2026",
+        subtitle: "Vocational Competency · SMKN 1 Subang",
+        image: "assets/certificates/tkj-competency.jpg",
+        description: "Official vocational competency certification in Computer & Network Engineering covering local network configuration, network security, router setup, and IT troubleshooting.",
+        tags: ["Certification", "TKJ", "Networking", "Hardware", "MikroTik"]
+    },
+    {
+        id: "cert-3",
+        title: "Digital Marketing & Brand Strategy Webinar",
+        type: "Webinars",
+        year: "2025",
+        subtitle: "Participant · Tech & Marketing Series",
+        image: "assets/certificates/digital-marketing-webinar.jpg",
+        description: "Participated in an intensive webinar focused on digital marketing strategies, modern branding, customer acquisition techniques, and social media analytics in the digital era.",
+        tags: ["Webinar", "Marketing", "Digital Skills", "Professional Development"]
+    },
+    {
+        id: "cert-4",
+        title: "Office Administration & Records Management Training",
+        type: "Training",
+        year: "2025",
+        subtitle: "Certificate of Completion · Practical Course",
+        image: "assets/certificates/office-admin-training.jpg",
+        description: "Successfully completed training program covering modern office filing systems, business documentation, digital archiving, and administrative workflows.",
+        tags: ["Training", "Administration", "Digital Filing", "Office Skills"]
+    }
+];
+
+// Map Ikon Berdasarkan Kategori
+const categoryIconMap = {
+    'Achievements': 'fas fa-trophy text-amber-400 bg-amber-950/80 border-amber-800/60',
+    'Certifications': 'fas fa-certificate text-blue-400 bg-blue-950/80 border-blue-800/60',
+    'Webinars': 'fas fa-chalkboard-user text-emerald-400 bg-emerald-950/80 border-emerald-800/60',
+    'Training': 'fas fa-graduation-cap text-purple-400 bg-purple-950/80 border-purple-800/60'
+};
+
+// Map Nama Lengkap Kategori untuk Modal
+const categoryFullNameMap = {
+    'Achievements': 'Achievement & Competition',
+    'Certifications': 'Professional Certification',
+    'Webinars': 'Webinar & Seminar',
+    'Training': 'Training & Workshop'
+};
+
+// Variabel Penyimpan Kategori Aktif & Data Sertifikat Aktif untuk Modal
+let currentCertCategory = 'All';
+let selectedCertData = null;
+
+// =========================================================
+// LOGIKA FILTER & RENDER SERTIFIKAT
+// =========================================================
+function renderCertificates(category = 'All') {
+    const grid = document.getElementById('certificates-grid');
+    if (!grid) return;
+
+    // Filter Data
+    const filteredData = category === 'All' 
+        ? certificatesData 
+        : certificatesData.filter(cert => cert.type === category);
+
+    if (filteredData.length === 0) {
+        grid.innerHTML = `
+            <div class="col-span-full py-12 text-center text-slate-400 glass-panel rounded-2xl border border-slate-800">
+                <i class="fas fa-certificate text-3xl text-slate-600 mb-2 block"></i>
+                <p class="text-sm">Belum ada sertifikat untuk kategori ini.</p>
+            </div>
+        `;
+        return;
+    }
+
+    grid.innerHTML = filteredData.map((cert) => {
+        const iconClasses = categoryIconMap[cert.type] || 'fas fa-award text-sky-400 bg-blue-950/80 border-blue-800/60';
+        const fallbackImg = `https://placehold.co/800x600/0a0f26/38bdf8?text=${encodeURIComponent(cert.title)}`;
+
+        return `
+            <div onclick="openCertificateModal('${cert.id}')" 
+                 onkeydown="if(event.key === 'Enter' || event.key === ' ') openCertificateModal('${cert.id}')"
+                 tabindex="0"
+                 role="button"
+                 aria-label="View details for ${cert.title}"
+                 class="cert-card glass-panel p-5 rounded-2xl border border-slate-800 hover:border-blue-500/60 transition-all flex items-start space-x-4 cursor-pointer group shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400">
+                
+                <!-- Icon Box -->
+                <div class="w-12 h-12 rounded-xl border flex items-center justify-center flex-shrink-0 text-xl font-bold group-hover:scale-110 transition-transform ${iconClasses}">
+                    <i class="${iconClasses.split(' ')[0]} ${iconClasses.split(' ')[1]}"></i>
+                </div>
+
+                <!-- Detail Content -->
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-2 mb-1">
+                        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-blue-950/80 text-sky-400 border border-blue-800/80">
+                            ${cert.type}
+                        </span>
+                        <span class="text-xs font-mono text-slate-400">${cert.year}</span>
+                    </div>
+
+                    <h4 class="text-sm sm:text-base font-bold text-white group-hover:text-sky-400 transition-colors truncate">
+                        ${cert.title}
+                    </h4>
+                    
+                    <p class="text-xs text-slate-400 mt-0.5 truncate">${cert.subtitle}</p>
+
+                    <div class="mt-3 text-[11px] font-semibold text-sky-400 group-hover:text-sky-300 flex items-center space-x-1">
+                        <span>Click to preview certificate</span>
+                        <i class="fas fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+function filterCertificates(category, event) {
+    if (event) {
+        event.preventDefault(); // Mencegah reload/scroll otomatis
+    }
+
+    currentCertCategory = category;
+
+    // Update state tombol filter
+    document.querySelectorAll('.cert-filter-btn').forEach(btn => {
+        btn.classList.remove('active', 'bg-blue-600', 'text-white');
+        btn.classList.add('text-slate-400');
+    });
+
+    if (event && event.currentTarget) {
+        event.currentTarget.classList.add('active', 'bg-blue-600', 'text-white');
+        event.currentTarget.classList.remove('text-slate-400');
+    }
+
+    renderCertificates(category);
+}
+
+// =========================================================
+// LOGIKA MODAL PREVIEW SERTIFIKAT
+// =========================================================
+function openCertificateModal(certId) {
+    const cert = certificatesData.find(c => c.id === certId);
+    if (!cert) return;
+
+    selectedCertData = cert;
+
+    const certModal = document.getElementById('certificate-modal');
+    const certModalBox = document.getElementById('cert-modal-box');
+    const modalImg = document.getElementById('cert-modal-img');
+
+    document.getElementById('cert-modal-title').textContent = cert.title;
+    document.getElementById('cert-modal-subtitle').textContent = cert.subtitle;
+    document.getElementById('cert-modal-year').textContent = cert.year;
+    document.getElementById('cert-modal-desc').textContent = cert.description;
+    document.getElementById('cert-modal-category').textContent = categoryFullNameMap[cert.type] || cert.type;
+
+    // Fallback gambar jika path lokal belum diisi/diakses
+    modalImg.src = cert.image;
+    modalImg.onerror = function() {
+        this.src = `https://placehold.co/800x600/0a0f26/38bdf8?text=${encodeURIComponent(cert.title)}`;
+    };
+
+    // Render Tags
+    const tagsContainer = document.getElementById('cert-modal-tags');
+    tagsContainer.innerHTML = cert.tags.map(tag => 
+        `<span class="px-2 py-0.5 rounded-md text-[10px] font-mono text-slate-300 bg-slate-900 border border-slate-800">${tag}</span>`
+    ).join('');
+
+    // Buka Modal
+    certModal.classList.remove('opacity-0', 'pointer-events-none');
+    certModalBox.classList.remove('scale-95');
+    certModalBox.classList.add('scale-100');
+}
+
+function closeCertificateModal() {
+    const certModal = document.getElementById('certificate-modal');
+    const certModalBox = document.getElementById('cert-modal-box');
+    
+    if (certModal && certModalBox) {
+        certModal.classList.add('opacity-0', 'pointer-events-none');
+        certModalBox.classList.remove('scale-100');
+        certModalBox.classList.add('scale-95');
+    }
+}
+
+// Integrasi Zoom Fullscreen Lightbox
+function openCertLightboxFromModal() {
+    if (!selectedCertData) return;
+
+    const lightbox = document.getElementById('fullScreenLightbox');
+    if (lightbox) {
+        document.getElementById('lightboxTitle').textContent = selectedCertData.title + ' - Original Certificate';
+        const lightboxImg = document.getElementById('lightboxImage');
+        lightboxImg.src = selectedCertData.image;
+        lightboxImg.onerror = function() {
+            this.src = `https://placehold.co/1000x700/0a0f26/38bdf8?text=${encodeURIComponent(selectedCertData.title)}`;
+        };
+
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+        if (typeof resetZoom === 'function') resetZoom();
+    }
+}
+
+// Global Event Listeners untuk Modal Sertifikat
+document.addEventListener('click', function(e) {
+    const certModal = document.getElementById('certificate-modal');
+    if (e.target === certModal) {
+        closeCertificateModal();
+    }
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const certModal = document.getElementById('certificate-modal');
+        if (certModal && !certModal.classList.contains('opacity-0')) {
+            closeCertificateModal();
+        }
+    }
+});
+
+// Inisialisasi awal render sertifikat saat halaman siap
+document.addEventListener('DOMContentLoaded', () => {
+    renderCertificates('All');
+});
+
