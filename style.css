@@ -93,3 +93,26 @@ body {
             box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
             border-color: rgba(56, 189, 248, 0.6);
         }
+            /* Custom Certificate Container & Card Styles */
+.cert-card {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Modal Image Fit without Cropping */
+#cert-modal-img {
+    object-fit: contain !important;
+}
+
+/* Hide scrollbar for modal content */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
