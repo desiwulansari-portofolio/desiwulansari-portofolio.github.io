@@ -314,13 +314,13 @@ tailwind.config = {
 const certificatesData = [
     {
         id: "cert-1",
-        title: "National Smart Student Olympiad",
+        title: "Top Graduate in Computer & Network Engineering",
         type: "Achievements",
-        year: "2024",
-        subtitle: "Gold Medal · National Level",
-        image: "assets/certificates/national-smart-student-olympiad.jpg",
-        description: "Awarded a Gold Medal in the National Smart Student Olympiad competition, demonstrating high academic achievement, problem-solving skills, and analytical thinking.",
-        tags: ["Achievement", "Competition", "Olympiad", "Bahasa Indonesia"]
+        year: "2026",
+        subtitle: "SMKN 1 Subang · Academic Year 2025/2026",
+        image: "assets/certificates/Peraih Nilai Tertinggi Jurusan Teknik Komputer dan Jaringan  (1).jpg",
+        description: "Being among the best throughout my school years has been a journey I’ve carried since elementary school. From academic achievements and competitions in my early years to graduating as the highest-achieving student in Computer & Network Engineering, every milestone reflects the consistency, effort, and determination I’ve built along the way.",
+        tags: ["Academic Achievement", "Top Graduate", "Computer & Network Engineering"]
     },
     {
         id: "cert-2",
