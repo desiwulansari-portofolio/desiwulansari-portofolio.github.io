@@ -324,33 +324,63 @@ const certificatesData = [
     },
     {
         id: "cert-2",
-        title: "Computer & Network Engineering Competency",
-        type: "Certifications",
-        year: "2026",
-        subtitle: "Vocational Competency · SMKN 1 Subang",
-        image: "assets/certificates/tkj-competency.jpg",
-        description: "Official vocational competency certification in Computer & Network Engineering covering local network configuration, network security, router setup, and IT troubleshooting.",
-        tags: ["Certification", "TKJ", "Networking", "Hardware", "MikroTik"]
+        title: "National Gold Medalist – Indonesian Language",
+        type: "Achievements",
+        year: "2024",
+        subtitle: "National Smart Student Olympiad 2024",
+        image: "assets/certificates/Peraih Medali Emas Tingkat Nasional Olimpiade  Bahasa Indonesia (1).jpg",
+        description: "The National Smart Student Olympiad gave me the opportunity to test my knowledge and understanding of Indonesian Language in a national-level competition. It challenged me to think carefully, understand questions, and apply what I had learned beyond the classroom. I was honored to earn a Gold Medal in the 2024 competition, adding another meaningful milestone to my academic journey.",
+        tags: ["National Competition", "Gold Medalist", "Indonesian Language"]
     },
     {
         id: "cert-3",
-        title: "Digital Marketing & Brand Strategy Webinar",
-        type: "Webinars",
-        year: "2025",
-        subtitle: "Participant · Tech & Marketing Series",
-        image: "assets/certificates/digital-marketing-webinar.jpg",
-        description: "Participated in an intensive webinar focused on digital marketing strategies, modern branding, customer acquisition techniques, and social media analytics in the digital era.",
-        tags: ["Webinar", "Marketing", "Digital Skills", "Professional Development"]
+        title: "Best Graduate – SMPN 3 Ciemas",
+        type: "Achievements",
+        year: "2023",
+        subtitle: "Academic Year 2022/2023",
+        image: "assets/certificates/Peringkat 1 Lulusan Terbaik Tahun Ajaran 2022_2023.jpg",
+        description: "Graduating as the best student at SMPN 3 Ciemas marked an important milestone in my academic journey. It reflected years of consistency, discipline, and the determination to keep improving throughout my school years. This achievement became one of the foundations that carried me into vocational high school, where I continued developing my skills in Computer & Network Engineering.",
+        tags: ["Academic Achievement", "Best Graduate", "SMPN 3 Ciemas"]
     },
     {
         id: "cert-4",
-        title: "Office Administration & Records Management Training",
-        type: "Training",
-        year: "2025",
-        subtitle: "Certificate of Completion · Practical Course",
-        image: "assets/certificates/office-admin-training.jpg",
-        description: "Successfully completed training program covering modern office filing systems, business documentation, digital archiving, and administrative workflows.",
-        tags: ["Training", "Administration", "Digital Filing", "Office Skills"]
+        title: "1st Place – Mathematics Olympiad",
+        type: "Achievements",
+        year: "2019",
+        subtitle: "District Level · Academic Year 2018/2019",
+        image: "assets/certificates/Peringkat 1 Olimpiade MTK Tingkat Kecamatan 2018_2019.jpg",
+        description: "This competition challenged students to solve mathematical problems that required more than simply knowing formulas. It pushed me to think logically, analyze problems carefully, and find solutions under competition conditions. Earning 1st place at the district level became one of my earliest achievements and an important part of my academic journey.",
+        tags: ["Academic Competition", "Mathematics", "1st Place"]
+    },
+    {
+        id: "cert-5",
+        title: "1st Place – Da’wah Competition",
+        type: "Achievements",
+        year: "2022",
+        subtitle: "Isra Mi’raj · SMPN 3 Ciemas",
+        image: "assets/certificates/Peringkat 1 Lomba Dakwa Dalam Lomba Isra Mi'raj.jpg",
+        description: "This competition gave me the opportunity to deliver a da’wah message in front of an audience, combining knowledge, confidence, and public speaking. Taking part in the Isra Mi’raj competition challenged me to communicate a meaningful message clearly and confidently, while also becoming an early experience in developing my ability to speak in front of others.",
+        tags: ["Public Speaking", "Da’wah", "1st Place"]
+    },
+     {
+        id: "cert-6",
+        title: "2nd Place – Da’wah Competition",
+        type: "Achievements",
+        year: "2022",
+        subtitle: "Maulid Nabi · SMPN 3 Ciemas",
+        image: "assets/certificates/Peringkat 2 Juara Dakwah Dalam Lomba Maulid Nabi.jpg",
+        description: "Another early experience in developing my confidence and communication skills through competition. In the Maulid Nabi da’wah competition, I delivered a religious message while learning how to organize ideas, speak clearly, and connect with an audience. Earning 2nd place made the experience even more meaningful and became part of my early journey in public speaking.",
+        tags: ["Public Speaking", "Da’wah", "2nd Place"]
+    },
+     {
+        id: "cert-6",
+        title: "1st Rank – Grade 9",
+        type: "Achievements",
+        year: "2022",
+        subtitle: "Semester 1 · SMPN 3 Ciemas",
+        image: "assets/certificates/Peringkat 1 Kelas 9 Semester 1 Tahun 2022_2023.jpg",
+        description: "This achievement reflects a consistent effort to maintain strong academic performance during Grade 9. Achieving 1st rank in the first semester was not only about the final result, but also about staying disciplined, keeping up with lessons, and continuing to give my best throughout the semester.",
+        tags: ["Academic Achievement", "1st Rank", "Grade 9"]
     }
 ];
 
