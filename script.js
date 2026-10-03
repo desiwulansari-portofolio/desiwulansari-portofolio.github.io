@@ -338,7 +338,7 @@ const certificatesData = [
         type: "Achievements",
         year: "2023",
         subtitle: "Academic Year 2022/2023",
-        image: "assets/certificates/Peringkat 1 Lulusan Terbaik Tahun Ajaran 2022_2023.jpg",
+        image: "assets/certificates/Peringkat 1 Lulusan Terbaik Tahun Ajaran 2022_2023 .jpg",
         description: "Graduating as the best student at SMPN 3 Ciemas marked an important milestone in my academic journey. It reflected years of consistency, discipline, and the determination to keep improving throughout my school years. This achievement became one of the foundations that carried me into vocational high school, where I continued developing my skills in Computer & Network Engineering.",
         tags: ["Academic Achievement", "Best Graduate", "SMPN 3 Ciemas"]
     },
@@ -373,7 +373,7 @@ const certificatesData = [
         tags: ["Public Speaking", "Da’wah", "2nd Place"]
     },
      {
-        id: "cert-6",
+        id: "cert-7",
         title: "1st Rank – Grade 9",
         type: "Achievements",
         year: "2022",
