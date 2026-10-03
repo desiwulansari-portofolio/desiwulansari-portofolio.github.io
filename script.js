@@ -313,6 +313,7 @@ tailwind.config = {
 // =========================================================
 const certificatesData = [
     {
+// DATA ACHIMVENTS 
         id: "cert-1",
         title: "Top Graduate in Computer & Network Engineering",
         type: "Achievements",
@@ -381,7 +382,83 @@ const certificatesData = [
         image: "assets/certificates/Peringkat 1 Kelas 9 Semester 1 Tahun 2022_2023.jpg",
         description: "This achievement reflects a consistent effort to maintain strong academic performance during Grade 9. Achieving 1st rank in the first semester was not only about the final result, but also about staying disciplined, keeping up with lessons, and continuing to give my best throughout the semester.",
         tags: ["Academic Achievement", "1st Rank", "Grade 9"]
+    },
+     {
+        id: "cert-8",
+        title: "1st Rank – Grade 9",
+        type: "Achievements",
+        year: "2023",
+        subtitle: "Semester 2 · SMPN 3 Ciemas",
+        image: "assets/certificates/Peringkat 1 Kelas 9 Semester Genap Tahun 2022_2023.jpg",
+        description: "Maintaining the 1st rank in the second semester became another milestone in my junior high school journey. It reflected my consistency in learning, staying disciplined, and maintaining strong academic performance until the end of Grade 9. More than a ranking, it became part of the foundation that shaped my habit of always striving to do my best throughout my school years.",
+        tags: ["Academic Achievement", "1st Rank", "Grade 9"]
+    },
+     {
+        id: "cert-9",
+        title: "1st Rank – Grade 7",
+        type: "Achievements",
+        year: "2021",
+        subtitle: "Semester 2 · SMPN 3 Ciemas",
+        image: "assets/certificates/Peringkat 1 Kelas 9 Semester Genap Tahun 2022_2023.jpg",
+        description: "One of my earliest academic achievements in junior high school. Achieving 1st rank in Grade 7, Semester 2, reflected my consistency and effort during the school year. It became an early milestone in a journey of striving to be among the best throughout my school years.",
+        tags: ["Academic Achievement", "1st Rank", "Grade 7"]
+    },
+
+//DATA CERTIFICATION
+     {
+        id: "cert-10",
+        title: "Internship Certificate – BPJS Kesehatan",
+        type: "Certifications",
+        year: "2025",
+        subtitle: "Administration & Mobile JKN Services · 6 Months",
+        image: "assets/certificates/Sertifikat PKL.jpg",
+        description: "A six-month internship experience at BPJS Kesehatan Cabang Subang, where I was involved in Mobile JKN services and administrative tasks. I assisted participants with membership information, KIS Digital, healthcare facility changes, contribution information, and the REHAB program, while also managing data using Microsoft Excel and Google Sheets. This experience strengthened my communication, administrative accuracy, and ability to work directly with people from different backgrounds.",
+        tags: ["Internship", "Administration", "Customer Service", "Mobile JKN"]
+    },
+     {
+        id: "cert-11",
+        title: "Competency Assessment – Computer & Network Engineering",
+        type: "Certifications",
+        year: "2026",
+        subtitle: "UKK · SMKN 1 Subang",
+        image: "assets/certificates/Sertifikat Ujikom.jpg",
+        description: "A practical competency assessment covering networking, MikroTik, Linux, PC assembly, and network topology. I produced UTP cables and handled related technical questions, then built and configured LAN and wireless networks using MikroTik and switches. The setup included configuring MikroTik as an AP Bridge, distributing networks to clients, managing bandwidth with queues, applying firewall rules, and blocking access to a specific website through WinBox on Debian Linux. The assessment also covered PC assembly and hardware selection, Star topology design for a café, and explaining the installation process and basic differences between operating systems using Linux Mint.",
+        tags: ["Networking", "MikroTik", "Linux", "PC Assembly", "Network Administration" ]
+    },
+
+//WEBINAR
+            
+     {
+        id: "cert-9",
+        title: "1st Rank – Grade 7",
+        type: "Achievements",
+        year: "2021",
+        subtitle: "Semester 2 · SMPN 3 Ciemas",
+        image: "assets/certificates/Peringkat 1 Kelas 9 Semester Genap Tahun 2022_2023.jpg",
+        description: "One of my earliest academic achievements in junior high school. Achieving 1st rank in Grade 7, Semester 2, reflected my consistency and effort during the school year. It became an early milestone in a journey of striving to be among the best throughout my school years.",
+        tags: ["Academic Achievement", "1st Rank", "Grade 7"]
+    },
+     {
+        id: "cert-9",
+        title: "1st Rank – Grade 7",
+        type: "Achievements",
+        year: "2021",
+        subtitle: "Semester 2 · SMPN 3 Ciemas",
+        image: "assets/certificates/Peringkat 1 Kelas 9 Semester Genap Tahun 2022_2023.jpg",
+        description: "One of my earliest academic achievements in junior high school. Achieving 1st rank in Grade 7, Semester 2, reflected my consistency and effort during the school year. It became an early milestone in a journey of striving to be among the best throughout my school years.",
+        tags: ["Academic Achievement", "1st Rank", "Grade 7"]
+    },
+     {
+        id: "cert-9",
+        title: "1st Rank – Grade 7",
+        type: "Achievements",
+        year: "2021",
+        subtitle: "Semester 2 · SMPN 3 Ciemas",
+        image: "assets/certificates/Peringkat 1 Kelas 9 Semester Genap Tahun 2022_2023.jpg",
+        description: "One of my earliest academic achievements in junior high school. Achieving 1st rank in Grade 7, Semester 2, reflected my consistency and effort during the school year. It became an early milestone in a journey of striving to be among the best throughout my school years.",
+        tags: ["Academic Achievement", "1st Rank", "Grade 7"]
     }
+
 ];
 
 // Map Ikon Berdasarkan Kategori
