@@ -399,7 +399,7 @@ const certificatesData = [
         type: "Achievements",
         year: "2021",
         subtitle: "Semester 2 · SMPN 3 Ciemas",
-        image: "assets/certificates/Peringkat 1 Kelas 9 Semester Genap Tahun 2022_2023.jpg",
+        image: "assets/certificates/Peringkat 1 Kelas VII A.jpg",
         description: "One of my earliest academic achievements in junior high school. Achieving 1st rank in Grade 7, Semester 2, reflected my consistency and effort during the school year. It became an early milestone in a journey of striving to be among the best throughout my school years.",
         tags: ["Academic Achievement", "1st Rank", "Grade 7"]
     },
